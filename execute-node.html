@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('fullcontact-execute', {
+        category: "enrichment",
+        defaults: {
+            name: { value: "Fullcontact - Execute" },
+            host: { value: "", type: "fullcontact-config" }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "white-globe.png",
+        color: "#a6bbcf",
+        label: function() {
+            return (this.name || "fullcontact-execute")
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="fullcontact-execute">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-host"><i class="icon-bookmark"></i> Config</label>
+        <input type="text" id="node-input-host">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="fullcontact-execute">
+
+</script>
